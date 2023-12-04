@@ -30,13 +30,6 @@ export default class CacheMiddleware {
     await self.redisClient.disconnect();
   }
 
-  /**
-   * This function will create a key for making the request uniq.
-   *
-   * @param {*Url path} path
-   * @param {*User age} age
-   * @param {*Url page} page
-   */
   generateCacheKey(path, season, page, limit) {
     return `${path}_${season}_${page}_${limit}`;
   }

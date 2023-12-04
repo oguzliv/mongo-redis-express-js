@@ -1,6 +1,5 @@
 import Chai from "chai";
 import ChaiClient from "chai-http";
-import validator from "validator";
 import ServerConfig from "../src/server/config/ServerConfig.js";
 
 const Expect = Chai.expect;

@@ -70,7 +70,7 @@ export default class Routes {
       }
     );
 
-    //paginated premier league fixtures for a specific season
+    //paginated premier league fixtures for a specific season and cached
     this.app.get(
       "/prem/seasons",
       this.commonMiddleware.querySeasonCheck,
@@ -94,8 +94,6 @@ export default class Routes {
         );
       }
     );
-
-    // List users by /users/list?age=32&limit=3&page=0
     // this.app.get(
     //   "/users/list",
     //   this.commonMiddleware.queryLimitPageCheck,

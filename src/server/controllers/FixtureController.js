@@ -42,6 +42,7 @@ export default class FixtureController {
     }
   }
 
+  //List bundesliga seasons according to season and cache them
   static async getBundesligaSeason(req, res, next, db, redisMiddleware) {
     const { page, limit, season } = req.query;
     if (req.query.page < 0) {
@@ -95,6 +96,7 @@ export default class FixtureController {
     }
   }
 
+  //List premier league seasons according to seasosn and cache them
   static async getPremierLeagueSeason(req, res, next, db, redisMiddleware) {
     const { page, limit, season } = req.query;
 
@@ -112,8 +114,6 @@ export default class FixtureController {
         .skip(limit * page)
         .limit(limit)
         .sort({ _id: 1 });
-
-      // await redisMiddleware.redisClient.connect();
       const key = redisMiddleware.generateCacheKey(
         req.path,
         req.query.season,
