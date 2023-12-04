@@ -62,9 +62,10 @@ _ seperated keys. If the endpoint response not in the cache, store the response 
 I try to achieve uniqueness for keys.
 
 ## Future Developments:
-A solid GitHub actions and Docker file can be served. These are challenged me the most in terms of times. Other than that I delievered everything I assume. 
+A solid GitHub actions and Docker file can be served. These are challenged me the most in terms of time and effort, other than that I delievered everything I assume. 
 
 Since the business logice heavily depends on read operations, GraphQL can be a good choice for document based databases. Also I try to emulate CLI command as a cron write job, 
 
-it may be configured with a message queue to consume and write more data with lesser latency. I used redis but only for 2 endpoints, if it is done to all endpoints it may increase performance significantly since .
+it may be configured with a message queue to consume and write more data with lesser latency and higher loads of data. 
+I used redis but only for 2 endpoints, if it is done to all endpoints it may increase performance significantly since the applicaiton depends heavily on read operations.
 
