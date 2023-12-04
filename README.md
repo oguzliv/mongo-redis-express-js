@@ -25,13 +25,13 @@ In MongoDb image, there should be data to be tested for both test and developmen
 *  Run `npm run serve:development` in another terminal session.
 * `http://127.0.0.1:3030` is ready.
 
-##Enpoints
+## Enpoints
 I decided to create :
 * `/fixtures` -> return all fixtures
 * `/fixtures?limit=5&page=1` -> return first 5 records of first page of all fixtures
 * `/bundesliga?limit=10&page=1` -> return first 10 records of first page of all bunesliga seasons
 * `/prem?limit=10&page=1` -> return first 10 records of first page of all premier league seasons
-* (##Cached endpoints)
+* (Cached endpoints)
 * `/bundesliga/limit=10&page=1&season=1718` -> returns first 10 records of first page of 17-18 season of bundesliga
 * `/prem/limit=10&page=1&season=1819` -> returns first 10 records of first page of 18-19 season of premier league
 
