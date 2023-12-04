@@ -55,7 +55,7 @@ I decided to create :
 ```
 
 ## Cache Logic
-I used redis for caching to cache responses. I cached the enpoint that lists fixtures according to season,limit and page. Used page,cache and season data to create
+I used redis to cache responses. I cached the enpoint that lists fixtures according to season,limit and page. Used page,cache and season data to create
 
 _ seperated keys. If the endpoint response not in the cache, store the response with the valid key and return the response from database. If there is data in cache, then return the data in the cache.
 
