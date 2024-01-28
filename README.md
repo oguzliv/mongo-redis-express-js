@@ -1,4 +1,4 @@
-# onedio
+# Explanatations
 
 This is an API server for reading csv data of 3rd pparty APIs. Since it has mostly read requests I decide to go with mongodb.
 Also used redis as cache for some endpoints.
